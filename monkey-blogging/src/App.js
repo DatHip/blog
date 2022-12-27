@@ -33,7 +33,7 @@ function App() {
   return (
     <div>
       <AuthProvider>
-        <Suspense>
+        <Suspense fallback={<p>Loading....</p>}>
           <Routes>
             <Route path="/" element={<HomePage></HomePage>}></Route>
             <Route path="/sign-up" element={<SignUpPage></SignUpPage>}></Route>
