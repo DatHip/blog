@@ -125,6 +125,7 @@ const PostDetailsPage = () => {
   if (!slug) return <PageNotFound></PageNotFound>;
   if (!postInfo.title) return null;
   const { user } = postInfo;
+  console.log(postInfo);
   return (
     <PostDetailsPageStyles>
       <Layout>

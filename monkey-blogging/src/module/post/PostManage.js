@@ -33,6 +33,7 @@ const PostManage = () => {
   const [total, setTotal] = useState(0);
   const navigate = useNavigate();
   const { userInfo } = useAuth();
+  
   useEffect(() => {
     async function fetchData() {
       const colRef = collection(db, "posts");
